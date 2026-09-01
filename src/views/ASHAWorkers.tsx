@@ -2,10 +2,10 @@ import { Phone, Users, ArrowUpRight, CheckCircle2, Clock, AlertTriangle, UserChe
 
 const WORKERS = [
   {
-    id: "TN-TTK-ASHA-031",
-    name: "Selvi Arumugam",
+    id: "BR-PAT-ASHA-031",
+    name: "Meena Kumari",
     ward: "Ward 3",
-    mobile: "98431 XXXXX",
+    mobile: "98765 XXXXX",
     households: 127,
     referrals: { total: 14, thisMonth: 3 },
     homeVisits: 89,
@@ -15,10 +15,10 @@ const WORKERS = [
     lastSync: "10:30 AM today",
   },
   {
-    id: "TN-TTK-ASHA-018",
-    name: "Meenakshi Balakrishnan",
+    id: "BR-PAT-ASHA-018",
+    name: "Sunita Devi",
     ward: "Ward 1",
-    mobile: "97514 XXXXX",
+    mobile: "97912 XXXXX",
     households: 112,
     referrals: { total: 9, thisMonth: 2 },
     homeVisits: 74,
@@ -28,10 +28,10 @@ const WORKERS = [
     lastSync: "09:45 AM today",
   },
   {
-    id: "TN-TTK-ASHA-024",
-    name: "Padma Krishnan",
+    id: "BR-PAT-ASHA-024",
+    name: "Rekha Sharma",
     ward: "Ward 5",
-    mobile: "94876 XXXXX",
+    mobile: "96254 XXXXX",
     households: 98,
     referrals: { total: 6, thisMonth: 1 },
     homeVisits: 61,
@@ -41,10 +41,10 @@ const WORKERS = [
     lastSync: "Yesterday, 3:12 PM",
   },
   {
-    id: "TN-TTK-ASHA-039",
-    name: "Kavitha Murugan",
+    id: "BR-PAT-ASHA-039",
+    name: "Anita Yadav",
     ward: "Ward 2",
-    mobile: "91765 XXXXX",
+    mobile: "91567 XXXXX",
     households: 143,
     referrals: { total: 11, thisMonth: 2 },
     homeVisits: 102,
@@ -54,10 +54,10 @@ const WORKERS = [
     lastSync: "10:15 AM today",
   },
   {
-    id: "TN-TTK-ASHA-012",
-    name: "Devi Subramaniam",
+    id: "BR-PAT-ASHA-012",
+    name: "Neelam Singh",
     ward: "Ward 4",
-    mobile: "99403 XXXXX",
+    mobile: "99341 XXXXX",
     households: 89,
     referrals: { total: 7, thisMonth: 1 },
     homeVisits: 53,
@@ -75,7 +75,7 @@ export default function ASHAWorkers() {
         <div>
           <h1 className="font-display font-bold text-phc-text text-2xl leading-none">ASHA Workers</h1>
           <p className="text-[13px] text-phc-muted mt-1.5">
-            Kovilpatti Block · {WORKERS.length} ASHA workers · Data synced from ASHA App via Firestore
+            Danapur Block · {WORKERS.length} ASHA workers · Data synced from ASHA App via NHM dashboard
           </p>
         </div>
         <div className="flex gap-2">

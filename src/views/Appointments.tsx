@@ -21,18 +21,18 @@ interface Appointment {
 }
 
 const APPOINTMENTS: Appointment[] = [
-  { id: "APT-001", token: "#001", time: "08:30", duration: 15, patient: "Kamala Devi R.", patientId: "TN-TTK-P-0892", age: 45, sex: "F", type: "OPD", reason: "Viral fever — follow-up, day 3", doctor: "Dr. Aravind Kumar", asha: "Selvi A.", status: "done" },
-  { id: "APT-002", token: "#002", time: "08:45", duration: 20, patient: "Muthuvel Sarangan", patientId: "TN-TTK-P-0893", age: 62, sex: "M", type: "Follow-up", reason: "Diabetes monitoring — HbA1c review", doctor: "Dr. Aravind Kumar", status: "done" },
-  { id: "APT-003", token: "#003", time: "09:00", duration: 30, patient: "Priya Sundaram", patientId: "TN-TTK-P-0894", age: 28, sex: "F", type: "ANC", reason: "ANC visit — 28 weeks, 4th antenatal check", doctor: "Dr. Aravind Kumar", asha: "Meenakshi B.", status: "done" },
-  { id: "APT-004", token: "#004", time: "09:30", duration: 20, patient: "Baby Rajan K.", patientId: "TN-TTK-P-0903", age: 1, sex: "M", type: "OPD", reason: "Paediatric fever — review", doctor: "Dr. Aravind Kumar", asha: "Padma K.", status: "in-progress" },
-  { id: "APT-005", token: "#005", time: "10:00", duration: 15, patient: "Ambika Velayutham", patientId: "TN-TTK-P-0902", age: 35, sex: "F", type: "Follow-up", reason: "Hypertension — monthly review", doctor: "Dr. Aravind Kumar", status: "scheduled" },
-  { id: "APT-006", token: "#006", time: "10:15", duration: 10, patient: "Subramanian T.", patientId: "TN-TTK-P-0895", age: 55, sex: "M", type: "DOT", reason: "TB DOT — direct observation day 43", doctor: "Staff Nurse Rekha", status: "scheduled" },
-  { id: "APT-007", token: "#007", time: "11:00", duration: 15, patient: "Selvaraj D.", patientId: "TN-TTK-P-0904", age: 70, sex: "M", type: "Follow-up", reason: "Diabetic foot — wound review", doctor: "Dr. Aravind Kumar", status: "scheduled" },
-  { id: "APT-008", token: "#008", time: "11:15", duration: 20, patient: "Baby Meenakshi", patientId: "TN-TTK-P-0905", age: 0, sex: "F", type: "Immunisation", reason: "BCG + OPV₀ — birth dose at 6 weeks", doctor: "Staff Nurse Rekha", asha: "Kavitha M.", status: "scheduled" },
-  { id: "APT-009", token: "#009", time: "11:30", duration: 30, patient: "Thenmozhi R.", patientId: "TN-TTK-P-0900", age: 32, sex: "F", type: "ANC", reason: "ANC visit — 32 weeks, gestational diabetes review", doctor: "Dr. Aravind Kumar", asha: "Kavitha M.", status: "scheduled" },
-  { id: "APT-010", token: "#010", time: "12:00", duration: 15, patient: "Murugesan S.", patientId: "TN-TTK-P-0906", age: 48, sex: "M", type: "Procedure", reason: "Post-op wound dressing — day 7", doctor: "Dr. Aravind Kumar", status: "scheduled" },
-  { id: "APT-011", token: "#011", time: "12:30", duration: 20, patient: "Nalini Ravi", patientId: "TN-TTK-P-0907", age: 58, sex: "F", type: "Follow-up", reason: "Cataract — pre-referral evaluation", doctor: "Dr. Aravind Kumar", asha: "Padma K.", status: "scheduled" },
-  { id: "APT-012", token: "#012", time: "09:15", duration: 15, patient: "Karuppaiah V.", patientId: "TN-TTK-P-0908", age: 44, sex: "M", type: "OPD", reason: "Acute back pain", doctor: "Dr. Aravind Kumar", status: "no-show" },
+  { id: "APT-001", token: "#001", time: "08:30", duration: 15, patient: "Kamla Devi", patientId: "BR-PAT-P-0892", age: 45, sex: "F", type: "OPD", reason: "Viral fever — follow-up, day 3", doctor: "Dr. Aravind Kumar", asha: "Meena K.", status: "done" },
+  { id: "APT-002", token: "#002", time: "08:45", duration: 20, patient: "Raghav Sharma", patientId: "BR-PAT-P-0893", age: 62, sex: "M", type: "Follow-up", reason: "Diabetes monitoring — HbA1c review", doctor: "Dr. Aravind Kumar", status: "done" },
+  { id: "APT-003", token: "#003", time: "09:00", duration: 30, patient: "Ananya Singh", patientId: "BR-PAT-P-0894", age: 28, sex: "F", type: "ANC", reason: "ANC visit — 28 weeks, 4th antenatal check", doctor: "Dr. Aravind Kumar", asha: "Sunita D.", status: "done" },
+  { id: "APT-004", token: "#004", time: "09:30", duration: 20, patient: "Baby Aarav Singh", patientId: "BR-PAT-P-0903", age: 1, sex: "M", type: "OPD", reason: "Paediatric fever — review", doctor: "Dr. Aravind Kumar", asha: "Rekha Sharma", status: "in-progress" },
+  { id: "APT-005", token: "#005", time: "10:00", duration: 15, patient: "Asha Verma", patientId: "BR-PAT-P-0902", age: 35, sex: "F", type: "Follow-up", reason: "Hypertension — monthly review", doctor: "Dr. Aravind Kumar", status: "scheduled" },
+  { id: "APT-006", token: "#006", time: "10:15", duration: 10, patient: "Shivam Tiwari", patientId: "BR-PAT-P-0895", age: 55, sex: "M", type: "DOT", reason: "TB DOT — direct observation day 43", doctor: "Staff Nurse Rekha", status: "scheduled" },
+  { id: "APT-007", token: "#007", time: "11:00", duration: 15, patient: "Vikas Singh", patientId: "BR-PAT-P-0901", age: 70, sex: "M", type: "Follow-up", reason: "Diabetic foot — wound review", doctor: "Dr. Aravind Kumar", status: "scheduled" },
+  { id: "APT-008", token: "#008", time: "11:15", duration: 20, patient: "Baby Pooja", patientId: "BR-PAT-P-0905", age: 0, sex: "F", type: "Immunisation", reason: "BCG + OPV₀ — birth dose at 6 weeks", doctor: "Staff Nurse Rekha", asha: "Anita Yadav", status: "scheduled" },
+  { id: "APT-009", token: "#009", time: "11:30", duration: 30, patient: "Pooja Kumari", patientId: "BR-PAT-P-0900", age: 32, sex: "F", type: "ANC", reason: "ANC visit — 32 weeks, gestational diabetes review", doctor: "Dr. Aravind Kumar", asha: "Anita Yadav", status: "scheduled" },
+  { id: "APT-010", token: "#010", time: "12:00", duration: 15, patient: "Manohar Singh", patientId: "BR-PAT-P-0906", age: 48, sex: "M", type: "Procedure", reason: "Post-op wound dressing — day 7", doctor: "Dr. Aravind Kumar", status: "scheduled" },
+  { id: "APT-011", token: "#011", time: "12:30", duration: 20, patient: "Lakshmi Devi", patientId: "BR-PAT-P-0907", age: 58, sex: "F", type: "Follow-up", reason: "Cataract — pre-referral evaluation", doctor: "Dr. Aravind Kumar", asha: "Rekha Sharma", status: "scheduled" },
+  { id: "APT-012", token: "#012", time: "09:15", duration: 15, patient: "Rakesh Yadav", patientId: "BR-PAT-P-0908", age: 44, sex: "M", type: "OPD", reason: "Acute back pain", doctor: "Dr. Aravind Kumar", status: "no-show" },
 ];
 
 const STATUS_META: Record<ApptStatus, { label: string; bg: string; text: string; icon: React.ReactNode }> = {
@@ -74,7 +74,7 @@ export default function Appointments() {
       <div className="flex items-start justify-between mb-6">
         <div>
           <h1 className="font-display font-bold text-phc-text text-2xl leading-none">Appointments & Queue</h1>
-          <p className="text-[13px] text-phc-muted mt-1.5">{dateStr} · Morning Shift</p>
+          <p className="text-[13px] text-slate-900 mt-1.5">{dateStr} · Morning Shift</p>
         </div>
         <div className="flex gap-2">
           <div className="flex border border-phc-border rounded-lg overflow-hidden">
@@ -98,14 +98,14 @@ export default function Appointments() {
       {/* Stats */}
       <div className="grid grid-cols-4 gap-4 mb-5">
         {[
-          { label: "Total Today", value: APPOINTMENTS.length, color: "text-phc-text" },
+          { label: "Total Today", value: APPOINTMENTS.length, color: "text-slate-900" },
           { label: "Done", value: done, color: "text-phc-green" },
           { label: "In Progress", value: inProgress, color: "text-phc-blue" },
           { label: "Upcoming", value: upcoming, color: "text-amber-700" },
         ].map((s) => (
           <div key={s.label} className="bg-phc-surface border border-phc-border rounded-lg px-4 py-4">
             <div className={`font-display font-bold text-2xl leading-none ${s.color}`}>{s.value}</div>
-            <div className="text-[12px] text-phc-muted mt-1">{s.label}</div>
+            <div className="text-[12px] text-slate-900 mt-1">{s.label}</div>
           </div>
         ))}
       </div>
@@ -117,7 +117,7 @@ export default function Appointments() {
             <thead>
               <tr className="bg-phc-bg border-b border-phc-border">
                 {["Token", "Time", "Patient", "Type", "Reason", "Doctor / Nurse", "ASHA", "Status", ""].map((h) => (
-                  <th key={h} className="px-4 py-2.5 text-left text-[10.5px] font-display font-semibold text-phc-muted uppercase tracking-wide whitespace-nowrap">
+                  <th key={h} className="px-4 py-2.5 text-left text-[10.5px] font-display font-semibold text-slate-900 uppercase tracking-wide whitespace-nowrap">
                     {h}
                   </th>
                 ))}
@@ -132,18 +132,18 @@ export default function Appointments() {
                       <span className="font-mono text-[12px] text-phc-blue font-medium">{a.token}</span>
                     </td>
                     <td className="px-4 py-2.5">
-                      <span className="font-mono text-[12px] text-phc-text">{a.time}</span>
-                      <span className="block text-[10.5px] text-phc-subtle">{a.duration} min</span>
+                      <span className="font-mono text-[12px] text-slate-900">{a.time}</span>
+                      <span className="block text-[10.5px] text-slate-700">{a.duration} min</span>
                     </td>
                     <td className="px-4 py-2.5">
-                      <span className="font-display font-semibold text-phc-text text-[13px] whitespace-nowrap">{a.patient}</span>
-                      <span className="block text-[11.5px] text-phc-muted">{a.age < 1 ? "Infant" : `${a.age}${a.sex}`}</span>
+                      <span className="font-display font-semibold text-slate-900 text-[13px] whitespace-nowrap">{a.patient}</span>
+                      <span className="block text-[11.5px] text-slate-700">{a.age < 1 ? "Infant" : `${a.age}${a.sex}`}</span>
                     </td>
                     <td className="px-4 py-2.5">
                       <span className={`inline-block px-2 py-0.5 rounded text-[10.5px] font-display font-bold ${TYPE_COLORS[a.type]}`}>{a.type}</span>
                     </td>
-                    <td className="px-4 py-2.5 text-[12px] text-phc-muted max-w-[200px] truncate" title={a.reason}>{a.reason}</td>
-                    <td className="px-4 py-2.5 text-[12px] text-phc-muted whitespace-nowrap">{a.doctor}</td>
+                    <td className="px-4 py-2.5 text-[12px] text-slate-700 max-w-[200px] truncate" title={a.reason}>{a.reason}</td>
+                    <td className="px-4 py-2.5 text-[12px] text-slate-900 whitespace-nowrap">{a.doctor}</td>
                     <td className="px-4 py-2.5 text-[12px]">
                       {a.asha ? (
                         <span className="flex items-center gap-1 text-phc-green whitespace-nowrap">
@@ -151,7 +151,7 @@ export default function Appointments() {
                           {a.asha}
                         </span>
                       ) : (
-                        <span className="text-phc-subtle">—</span>
+                        <span className="text-slate-700">—</span>
                       )}
                     </td>
                     <td className="px-4 py-2.5">
@@ -167,7 +167,7 @@ export default function Appointments() {
               })}
             </tbody>
           </table>
-          <div className="px-4 py-3 border-t border-phc-border bg-phc-bg text-[11.5px] text-phc-muted">
+          <div className="px-4 py-3 border-t border-phc-border bg-phc-bg text-[11.5px] text-slate-900">
             {APPOINTMENTS.length} appointments scheduled for today
           </div>
         </div>
@@ -179,7 +179,7 @@ export default function Appointments() {
           {/* Week nav */}
           <div className="flex items-center gap-4 px-5 py-3.5 border-b border-phc-border">
             <button className="p-1 rounded hover:bg-phc-bg text-phc-muted cursor-pointer"><ChevronLeft size={16} /></button>
-            <span className="font-display font-semibold text-phc-text text-[14px]">Week of 01 Sep 2024</span>
+            <span className="font-display font-semibold text-slate-900 text-[14px]">Week of 01 Sep 2024</span>
             <button className="p-1 rounded hover:bg-phc-bg text-phc-muted cursor-pointer"><ChevronRight size={16} /></button>
             <button className="ml-auto text-[12.5px] text-phc-blue hover:underline font-display cursor-pointer flex items-center gap-1">
               <Calendar size={13} />
@@ -197,8 +197,8 @@ export default function Appointments() {
                   const isToday = i === 0;
                   return (
                     <div key={d} className={`px-3 py-2 text-center border-l border-phc-border ${isToday ? "bg-phc-blue-light" : ""}`}>
-                      <div className={`text-[11px] font-display font-semibold ${isToday ? "text-phc-blue" : "text-phc-muted"}`}>{d}</div>
-                      <div className={`font-display font-bold text-[16px] leading-none mt-0.5 ${isToday ? "text-phc-blue" : "text-phc-text"}`}>
+                      <div className={`text-[11px] font-display font-semibold ${isToday ? "text-phc-blue" : "text-slate-900"}`}>{d}</div>
+                      <div className={`font-display font-bold text-[16px] leading-none mt-0.5 ${isToday ? "text-phc-blue" : "text-slate-900"}`}>
                         {date.getDate()}
                       </div>
                     </div>
@@ -208,7 +208,7 @@ export default function Appointments() {
               {/* Hours */}
               {HOURS.map((hour) => (
                 <div key={hour} className="grid grid-cols-8 border-b border-phc-border-light min-h-[56px]">
-                  <div className="px-3 py-2 text-[10.5px] font-mono text-phc-subtle pt-2">{hour}</div>
+                  <div className="px-3 py-2 text-[10.5px] font-mono text-slate-700 pt-2">{hour}</div>
                   {DAYS.map((_, di) => {
                     const slotAppts = di === 0
                       ? APPOINTMENTS.filter((a) => a.time.startsWith(hour.split(":")[0].padStart(2, "0")))

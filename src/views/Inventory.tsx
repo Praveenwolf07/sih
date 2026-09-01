@@ -19,13 +19,13 @@ interface Item {
 }
 
 const ITEMS: Item[] = [
-  { id: "MED-001", name: "Paracetamol 500mg Tab", category: "Analgesic", unit: "Strips", stock: 45, reorder: 100, max: 500, lastIssued: "01 Sep 2024", expiryDate: "Mar 2026", supplier: "Tamil Nadu Medical Stores", status: "low", pendingIndent: true },
-  { id: "MED-002", name: "Amoxicillin 500mg Cap", category: "Antibiotic", unit: "Strips", stock: 180, reorder: 80, max: 400, lastIssued: "31 Aug 2024", expiryDate: "Jun 2025", supplier: "Tamil Nadu Medical Stores", status: "adequate", pendingIndent: false },
-  { id: "MED-003", name: "Metformin 500mg Tab", category: "Antidiabetic", unit: "Strips", stock: 220, reorder: 100, max: 600, lastIssued: "01 Sep 2024", expiryDate: "Sep 2025", supplier: "Tamil Nadu Medical Stores", status: "adequate", pendingIndent: false },
-  { id: "MED-004", name: "Amlodipine 5mg Tab", category: "Antihypertensive", unit: "Strips", stock: 60, reorder: 80, max: 400, lastIssued: "01 Sep 2024", expiryDate: "Dec 2025", supplier: "Tamil Nadu Medical Stores", status: "low", pendingIndent: false },
+  { id: "MED-001", name: "Paracetamol 500mg Tab", category: "Analgesic", unit: "Strips", stock: 45, reorder: 100, max: 500, lastIssued: "01 Sep 2024", expiryDate: "Mar 2026", supplier: "Bihar Medical Stores", status: "low", pendingIndent: true },
+  { id: "MED-002", name: "Amoxicillin 500mg Cap", category: "Antibiotic", unit: "Strips", stock: 180, reorder: 80, max: 400, lastIssued: "31 Aug 2024", expiryDate: "Jun 2025", supplier: "Bihar Medical Stores", status: "adequate", pendingIndent: false },
+  { id: "MED-003", name: "Metformin 500mg Tab", category: "Antidiabetic", unit: "Strips", stock: 220, reorder: 100, max: 600, lastIssued: "01 Sep 2024", expiryDate: "Sep 2025", supplier: "Bihar Medical Stores", status: "adequate", pendingIndent: false },
+  { id: "MED-004", name: "Amlodipine 5mg Tab", category: "Antihypertensive", unit: "Strips", stock: 60, reorder: 80, max: 400, lastIssued: "01 Sep 2024", expiryDate: "Dec 2025", supplier: "Bihar Medical Stores", status: "low", pendingIndent: false },
   { id: "MED-005", name: "ORS Sachets", category: "Rehydration", unit: "Packets", stock: 23, reorder: 50, max: 200, lastIssued: "01 Sep 2024", expiryDate: "Jan 2026", supplier: "UNICEF Supply", status: "low", pendingIndent: true },
   { id: "MED-006", name: "Iron + Folic Acid Tab", category: "Nutritional", unit: "Strips", stock: 310, reorder: 100, max: 600, lastIssued: "01 Sep 2024", expiryDate: "Apr 2026", supplier: "NHM Supply", status: "adequate", pendingIndent: false },
-  { id: "MED-007", name: "Cotrimoxazole 480mg Tab", category: "Antibiotic", unit: "Strips", stock: 8, reorder: 40, max: 200, lastIssued: "30 Aug 2024", expiryDate: "Aug 2025", supplier: "Tamil Nadu Medical Stores", status: "critical", pendingIndent: true },
+  { id: "MED-007", name: "Cotrimoxazole 480mg Tab", category: "Antibiotic", unit: "Strips", stock: 8, reorder: 40, max: 200, lastIssued: "30 Aug 2024", expiryDate: "Aug 2025", supplier: "Bihar Medical Stores", status: "critical", pendingIndent: true },
   { id: "MED-008", name: "Isoniazid 300mg Tab (TB)", category: "Antitubercular", unit: "Strips", stock: 95, reorder: 60, max: 300, lastIssued: "01 Sep 2024", expiryDate: "Mar 2026", supplier: "RNTCP Stores", status: "adequate", pendingIndent: false },
   { id: "SUP-001", name: "Surgical Bandage (5cm)", category: "Surgical Supply", unit: "Rolls", stock: 12, reorder: 30, max: 100, lastIssued: "01 Sep 2024", expiryDate: "Dec 2027", supplier: "State Medical Stores", status: "low", pendingIndent: false },
   { id: "SUP-002", name: "Disposable Gloves (M)", category: "PPE", unit: "Pairs", stock: 0, reorder: 50, max: 200, lastIssued: "31 Aug 2024", expiryDate: "Dec 2026", supplier: "State Medical Stores", status: "out", pendingIndent: true },
@@ -70,7 +70,7 @@ export default function Inventory() {
         <div>
           <h1 className="font-display font-bold text-phc-text text-2xl leading-none">Inventory</h1>
           <p className="text-[13px] text-phc-muted mt-1.5">
-            Kovilpatti PHC Store · {ITEMS.length} items · Last updated 01 Sep 2024
+            Patna Rural PHC Store · {ITEMS.length} items · Last updated 01 Sep 2024
           </p>
         </div>
         <div className="flex gap-2">

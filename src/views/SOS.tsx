@@ -26,44 +26,44 @@ interface SOSAlert {
 const ALERTS: SOSAlert[] = [
   {
     id: "SOS-2024-042",
-    patient: "Sathya Narayanan",
+    patient: "Saurabh Verma",
     age: 42, sex: "M",
     condition: "Acute chest pain, jaw pain, diaphoresis — suspected STEMI",
-    location: "14, Gandhi Street, Kovilpatti Town",
+    location: "14, Gandhi Nagar, Danapur",
     ward: "Ward 3",
-    asha: "Selvi Arumugam",
+    asha: "Meena Kumari",
     reportedBy: "ASHA App",
     time: "10:03 AM",
     elapsed: "27 min ago",
     level: "sos",
     status: "active",
-    referredTo: "CHC Kovilpatti",
+    referredTo: "AIIMS Patna",
   },
   {
     id: "SOS-2024-041",
-    patient: "Geetha Murugan",
+    patient: "Geeta Yadav",
     age: 24, sex: "F",
     condition: "Obstructed labour — prolonged labour > 24h, FHR decelerations",
-    location: "7, Murugan Nagar, Mangalampet",
+    location: "7, Vikas Nagar, Paliganj",
     ward: "Ward 4",
-    asha: "Devi Subramaniam",
+    asha: "Neelam Singh",
     reportedBy: "ASHA App",
     time: "02:14 AM",
     elapsed: "8 hrs ago",
     level: "emergency",
     status: "dispatched",
-    action: "Patient transported to GH Thoothukudi. Ambulance 108-TN-4291 dispatched at 02:28 AM.",
-    ambulance: "108-TN-4291",
-    referredTo: "GH Thoothukudi",
+    action: "Patient transported to PMCH Patna. Ambulance 108-BR-4291 dispatched at 02:28 AM.",
+    ambulance: "108-BR-4291",
+    referredTo: "PMCH Patna",
   },
   {
     id: "SOS-2024-040",
-    patient: "Karthikeyan M.",
+    patient: "Kartik Singh",
     age: 7, sex: "M",
     condition: "Febrile seizure — 3 min episode, now postictal",
-    location: "22, Anna Nagar, Ottapidaram",
+    location: "22, Shastri Nagar, Maner",
     ward: "Ward 1",
-    asha: "Meenakshi Balakrishnan",
+    asha: "Sunita Devi",
     reportedBy: "ASHA App",
     time: "Yesterday, 4:45 PM",
     elapsed: "Yesterday",
@@ -74,10 +74,10 @@ const ALERTS: SOSAlert[] = [
   },
   {
     id: "SOS-2024-039",
-    patient: "Nalini Raju",
+    patient: "Nalini Rani",
     age: 58, sex: "F",
     condition: "Hypertensive crisis — BP 220/130, severe headache",
-    location: "Kovilpatti Town",
+    location: "Danapur Market Road",
     ward: "Ward 2",
     reportedBy: "Direct Walk-in",
     time: "Yesterday, 10:20 AM",
@@ -195,7 +195,7 @@ function AlertDetail({ alert, onResolve }: { alert: SOSAlert; onResolve: () => v
             <MapPin size={14} className="text-phc-blue flex-shrink-0" />
             <div>
               <div className="text-[13px] text-phc-text">{alert.location}</div>
-              <div className="text-[11.5px] text-phc-muted">{alert.ward} · Kovilpatti Block · Thoothukudi</div>
+              <div className="text-[11.5px] text-phc-muted">{alert.ward} · Danapur Block · Patna</div>
             </div>
           </div>
         </div>
@@ -237,9 +237,9 @@ function AlertDetail({ alert, onResolve }: { alert: SOSAlert; onResolve: () => v
           <div className="grid grid-cols-2 gap-2">
             {[
               { label: "Ambulance 108", number: "108" },
-              { label: "CHC Kovilpatti", number: "04632-222 XXX" },
-              { label: "GH Thoothukudi", number: "0461-234 XXXX" },
-              { label: "District CMO", number: "0461-222 XXXX" },
+              { label: "AIIMS Patna", number: "0612-222 XXX" },
+              { label: "PMCH Patna", number: "0612-235 XXXX" },
+              { label: "District CMO", number: "0612-226 XXXX" },
             ].map((c) => (
               <button key={c.label} className="flex items-center gap-2.5 px-3 py-2.5 bg-phc-bg border border-phc-border rounded-lg hover:border-phc-blue/40 transition-colors cursor-pointer text-left">
                 <div className="w-7 h-7 rounded-full bg-phc-blue-light flex items-center justify-center flex-shrink-0">
@@ -313,7 +313,7 @@ export default function SOS() {
         <div className="mb-5 bg-red-600 text-white rounded-lg px-5 py-3.5 flex items-center gap-4">
           <Siren size={20} className="flex-shrink-0 animate-pulse" />
           <div>
-            <div className="font-display font-bold text-[14px]">SOS Alert Active — Sathya Narayanan (Token #007)</div>
+            <div className="font-display font-bold text-[14px]">SOS Alert Active — Saurabh Verma (Token #007)</div>
             <div className="text-[12.5px] text-red-100 mt-0.5">Suspected STEMI · 10:03 AM · Ward 3 · Reported via ASHA App</div>
           </div>
           <div className="ml-auto flex gap-2">

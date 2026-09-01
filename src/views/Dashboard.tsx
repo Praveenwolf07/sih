@@ -37,10 +37,10 @@ interface QueuePatient {
 
 // Temporary data structure for the queue to maintain functional parity while integrating
 const QUEUE: QueuePatient[] = [
-  { token: "#001", name: "Kamala Devi R.", age: 45, sex: "F", complaint: "Fever, body pain", asha: "Selvi A.", arrived: "08:42", status: "treating" },
-  { token: "#002", name: "Muthuvel Sarangan", age: 62, sex: "M", complaint: "Diabetes monitoring", asha: undefined, arrived: "09:05", status: "waiting" },
-  { token: "#003", name: "Priya Sundaram", age: 28, sex: "F", complaint: "ANC — 28 weeks", asha: "Meenakshi B.", arrived: "09:18", status: "waiting" },
-  { token: "#004", name: "Baby Rajan K.", age: 1, sex: "M", complaint: "Paediatric fever — 3 days", asha: "Padma K.", arrived: "09:31", status: "treating" },
+  { token: "#001", name: "Kamla Devi", age: 45, sex: "F", complaint: "Fever, body pain", asha: "Meena K.", arrived: "08:42", status: "treating" },
+  { token: "#002", name: "Raghav Sharma", age: 62, sex: "M", complaint: "Diabetes monitoring", asha: undefined, arrived: "09:05", status: "waiting" },
+  { token: "#003", name: "Ananya Singh", age: 28, sex: "F", complaint: "ANC — 28 weeks", asha: "Sunita D.", arrived: "09:18", status: "waiting" },
+  { token: "#004", name: "Baby Aarav Singh", age: 1, sex: "M", complaint: "Paediatric fever — 3 days", asha: "Rekha Sharma", arrived: "09:31", status: "treating" },
 ];
 
 type ReferralPriority = "urgent" | "normal" | "emergency";

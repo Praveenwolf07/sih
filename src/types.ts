@@ -5,6 +5,7 @@ export type ViewType =
   | "referrals"
   | "appointments"
   | "asha"
+  | "ai-chatbot"
   | "inventory"
   | "admin-doctors"
   | "followups"

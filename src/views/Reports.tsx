@@ -82,7 +82,7 @@ export default function Reports() {
       <div className="flex items-start justify-between mb-6">
         <div>
           <h1 className="font-display font-bold text-phc-text text-2xl leading-none">Reports</h1>
-          <p className="text-[13px] text-phc-muted mt-1.5">HMIS · NHM · RNTCP · UIP · IDSP reporting — Kovilpatti PHC</p>
+          <p className="text-[13px] text-phc-muted mt-1.5">HMIS · NHM · RNTCP · UIP · IDSP reporting — Patna Rural PHC</p>
         </div>
         <div className="flex gap-2">
           <div className="flex items-center gap-2 px-3 py-2 bg-phc-blue-light border border-blue-200 rounded-lg text-[12px] text-phc-blue font-display font-medium">

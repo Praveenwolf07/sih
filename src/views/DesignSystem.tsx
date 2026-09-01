@@ -60,7 +60,7 @@ function TypographySection() {
         <div className="bg-phc-surface border border-phc-border rounded-lg p-6 space-y-4">
           <div className="flex items-baseline gap-4">
             <span className="text-[11px] font-mono text-phc-subtle w-16 flex-shrink-0">36px / 800</span>
-            <span className="font-display font-extrabold text-phc-text text-4xl">Kovilpatti PHC Dashboard</span>
+            <span className="font-display font-extrabold text-phc-text text-4xl">Patna Rural PHC Dashboard</span>
           </div>
           <div className="flex items-baseline gap-4">
             <span className="text-[11px] font-mono text-phc-subtle w-16 flex-shrink-0">28px / 700</span>
@@ -72,7 +72,7 @@ function TypographySection() {
           </div>
           <div className="flex items-baseline gap-4">
             <span className="text-[11px] font-mono text-phc-subtle w-16 flex-shrink-0">18px / 600</span>
-            <span className="font-display font-semibold text-phc-text text-lg">Referral to CHC Kovilpatti — Urgent</span>
+            <span className="font-display font-semibold text-phc-text text-lg">Referral to AIIMS Patna — Urgent</span>
           </div>
           <div className="flex items-baseline gap-4">
             <span className="text-[11px] font-mono text-phc-subtle w-16 flex-shrink-0">15px / 500</span>
@@ -96,13 +96,13 @@ function TypographySection() {
           <div className="flex gap-4">
             <span className="text-[11px] font-mono text-phc-subtle w-16 flex-shrink-0 mt-0.5">14px / 400</span>
             <p className="text-phc-muted text-sm leading-relaxed max-w-xl">
-              Patient was referred by ASHA Worker Selvi Arumugam from Ward 3 on 01 Sep 2024 at 10:03 AM with chief complaint of chest pain radiating to left arm and jaw. Vitals on arrival: BP 152/96, Pulse 98 bpm, SpO₂ 94%.
+              Patient was referred by ASHA Worker Meena Kumari from Ward 3 on 01 Sep 2024 at 10:03 AM with chief complaint of chest pain radiating to left arm and jaw. Vitals on arrival: BP 152/96, Pulse 98 bpm, SpO₂ 94%.
             </p>
           </div>
           <div className="flex gap-4">
             <span className="text-[11px] font-mono text-phc-subtle w-16 flex-shrink-0 mt-0.5">12px / 400</span>
             <p className="text-phc-subtle text-xs leading-relaxed max-w-xl">
-              Last updated 01 Sep 2024 · Source: ASHA App sync via Firestore · HMIS record TN-TTK-PHC-042-P0892
+              Last updated 01 Sep 2024 · Source: ASHA App sync via NHM dashboard · HMIS record BR-PAT-PHC-042-P0892
             </p>
           </div>
         </div>
@@ -111,10 +111,10 @@ function TypographySection() {
       <SubSection title="Monospace — font-mono (JetBrains Mono)">
         <div className="bg-phc-surface border border-phc-border rounded-lg p-5 space-y-3">
           {[
-            ["Patient ID", "TN-TTK-PHC-042-P0892"],
-            ["HMIS Code", "TN-TTK-PHC-042"],
+            ["Patient ID", "BR-PAT-PHC-042-P0892"],
+            ["HMIS Code", "BR-PAT-PHC-042"],
             ["Token", "#007"],
-            ["ASHA ID", "TN-TTK-ASHA-031"],
+            ["ASHA ID", "BR-PAT-ASHA-031"],
             ["Referral", "REF-2024-089"],
           ].map(([label, val]) => (
             <div key={label} className="flex items-center gap-4">
@@ -400,7 +400,7 @@ function CardsSection() {
               ["Name", "Kamala Devi R."],
               ["Age / Sex", "45 years · Female"],
               ["Token", "#001"],
-              ["ASHA Ref.", "Selvi Arumugam"],
+              ["ASHA Ref.", "Meena Kumari"],
               ["Arrived", "08:42 AM"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-2">
@@ -426,7 +426,7 @@ function CardsSection() {
           <div className="mt-auto text-[11.5px] text-phc-green font-sans">
             ↑ 8 new this month
           </div>
-          <div className="text-[11px] text-phc-subtle font-sans mt-0.5">ASHA: Selvi Arumugam · Ward 3</div>
+          <div className="text-[11px] text-phc-subtle font-sans mt-0.5">ASHA: Meena Kumari · Ward 3</div>
         </div>
 
         {/* Alert card */}
@@ -446,7 +446,7 @@ function CardsSection() {
             </div>
             <div>
               <div className="font-display font-semibold text-phc-blue text-[13px]">Sync Complete</div>
-              <div className="text-[12px] text-blue-700 mt-0.5">3 new ASHA referrals synced from Firestore at 10:30 AM.</div>
+              <div className="text-[12px] text-blue-700 mt-0.5">3 new ASHA referrals synced from the NHM dashboard at 10:30 AM.</div>
             </div>
           </div>
           <div className="bg-phc-green-light border border-green-200 rounded-lg px-4 py-3 flex gap-3">
@@ -455,7 +455,7 @@ function CardsSection() {
             </div>
             <div>
               <div className="font-display font-semibold text-phc-green text-[13px]">Referral Acknowledged</div>
-              <div className="text-[12px] text-green-800 mt-0.5">CHC Kovilpatti accepted REF-2024-089 at 10:22 AM.</div>
+              <div className="text-[12px] text-green-800 mt-0.5">AIIMS Patna accepted REF-2024-089 at 10:22 AM.</div>
             </div>
           </div>
         </div>
@@ -467,11 +467,11 @@ function CardsSection() {
 // ─── Tables ───────────────────────────────────────────────────────────────────
 
 const TABLE_ROWS = [
-  { id: "P-0891", name: "Arjun Pandi", age: "34M", condition: "Pulmonary TB (suspected)", asha: "Meenakshi B.", visit: "30 Aug 2024", status: "referred" },
-  { id: "P-0892", name: "Kamala Devi R.", age: "45F", condition: "Viral fever", asha: "Selvi A.", visit: "01 Sep 2024", status: "treating" },
-  { id: "P-0893", name: "Muthuvel S.", age: "62M", condition: "Type 2 diabetes monitoring", asha: undefined, visit: "01 Sep 2024", status: "waiting" },
-  { id: "P-0894", name: "Priya Sundaram", age: "28F", condition: "ANC — 28 weeks gestation", asha: "Meenakshi B.", visit: "01 Sep 2024", status: "waiting" },
-  { id: "P-0895", name: "Subramanian T.", age: "55M", condition: "TB — DOT follow-up (Day 42)", asha: undefined, visit: "01 Sep 2024", status: "done" },
+  { id: "P-0891", name: "Arvind Kumar", age: "34M", condition: "Pulmonary TB (suspected)", asha: "Sunita D.", visit: "30 Aug 2024", status: "referred" },
+  { id: "P-0892", name: "Kamla Devi", age: "45F", condition: "Viral fever", asha: "Meena K.", visit: "01 Sep 2024", status: "treating" },
+  { id: "P-0893", name: "Mohan Singh", age: "62M", condition: "Type 2 diabetes monitoring", asha: undefined, visit: "01 Sep 2024", status: "waiting" },
+  { id: "P-0894", name: "Ananya Singh", age: "28F", condition: "ANC — 28 weeks gestation", asha: "Sunita D.", visit: "01 Sep 2024", status: "waiting" },
+  { id: "P-0895", name: "Subhash Tiwari", age: "55M", condition: "TB — DOT follow-up (Day 42)", asha: undefined, visit: "01 Sep 2024", status: "done" },
 ];
 
 const ROW_STATUS_META: Record<string, { label: string; bg: string; text: string; icon: React.ReactNode }> = {
@@ -630,7 +630,7 @@ const ALERTS = [
     type: "error",
     icon: <XCircle size={17} className="text-red-600 flex-shrink-0" />,
     title: "SOS Alert — Immediate Action Required",
-    body: "Patient Sathya Narayanan (Token #007) presented with acute chest pain. Vitals: BP 158/102, Pulse 108, SpO₂ 92%. Refer to CHC immediately.",
+    body: "Patient Saurabh Verma (Token #007) presented with acute chest pain. Vitals: BP 158/102, Pulse 108, SpO₂ 92%. Refer to higher centre immediately.",
     action: "Open Case",
     bg: "bg-red-50",
     border: "border-red-300",
@@ -654,7 +654,7 @@ const ALERTS = [
     type: "info",
     icon: <Info size={17} className="text-phc-blue flex-shrink-0" />,
     title: "3 New ASHA Referrals Synced",
-    body: "Firestore sync completed at 10:30 AM. Referrals from Selvi Arumugam (Ward 3), Meenakshi Balakrishnan (Ward 1), and Kavitha Murugan (Ward 2) are ready for review.",
+    body: "NHM sync completed at 10:30 AM. Referrals from Meena Kumari (Ward 3), Sunita Devi (Ward 1), and Anita Yadav (Ward 2) are ready for review.",
     action: "View Referrals",
     bg: "bg-phc-blue-light",
     border: "border-blue-200",
@@ -666,7 +666,7 @@ const ALERTS = [
     type: "success",
     icon: <CheckCircle2 size={17} className="text-phc-green flex-shrink-0" />,
     title: "Referral Acknowledged",
-    body: "CHC Kovilpatti has acknowledged referral REF-2024-089 for patient Sathya Narayanan. Transfer confirmed. Patient's family has been notified.",
+    body: "AIIMS Patna has acknowledged referral REF-2024-089 for patient Saurabh Verma. Transfer confirmed. Patient's family has been notified.",
     action: "View Record",
     bg: "bg-phc-green-light",
     border: "border-green-200",
@@ -742,7 +742,7 @@ function ModalSection() {
                 <h3 className="font-display font-bold text-phc-text text-[16px]">
                   Create Referral
                 </h3>
-                <p className="text-[11.5px] text-phc-muted mt-0.5">PHC Kovilpatti → CHC / Hospital</p>
+                <p className="text-[11.5px] text-phc-muted mt-0.5">Patna Rural PHC → CHC / Hospital</p>
               </div>
               <button onClick={() => setOpen(false)} className="p-1.5 rounded hover:bg-phc-bg text-phc-muted hover:text-phc-text transition-colors cursor-pointer">
                 <X size={16} />
@@ -754,7 +754,7 @@ function ModalSection() {
               <div>
                 <label className="block text-[11.5px] font-display font-semibold text-phc-muted uppercase tracking-wide mb-1.5">Patient</label>
                 <div className="px-3 py-2 border border-phc-border rounded-lg bg-phc-bg text-[13px] text-phc-text font-display font-medium">
-                  Sathya Narayanan · 42M · Token #007
+                  Saurabh Verma · 42M · Token #007
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-3">
@@ -762,8 +762,8 @@ function ModalSection() {
                   <label className="block text-[11.5px] font-display font-semibold text-phc-muted uppercase tracking-wide mb-1.5">Referred To</label>
                   <div className="relative">
                     <select className="w-full px-3 py-2 text-[13px] border border-phc-border rounded-lg bg-phc-surface appearance-none pr-7">
-                      <option>CHC Kovilpatti</option>
-                      <option>GH Thoothukudi</option>
+                      <option>AIIMS Patna</option>
+                      <option>PMCH Patna</option>
                       <option>DOTS Centre</option>
                     </select>
                     <ChevronDown size={12} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-phc-subtle pointer-events-none" />

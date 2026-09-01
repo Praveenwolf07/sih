@@ -22,6 +22,13 @@ export default function AdminManagement() {
     setFormData({ name: "", email: "", specialization: "" });
   };
 
+  const handleApproveDoctor = (id: string) => {
+    const result = approveDoctorRegistration(id);
+    if (result) {
+      console.log(`Doctor approved: ${result.id} / ${result.email}`);
+    }
+  };
+
   return (
     <div className="p-6 space-y-8">
       <div>
@@ -108,7 +115,7 @@ export default function AdminManagement() {
                 <td className="px-4 py-3">{r.status}</td>
                 <td className="px-4 py-3">
                   {r.status === "Pending" && (
-                    <button onClick={() => approveDoctorRegistration(r.id)} className="text-green-600 hover:underline">Approve</button>
+                    <button onClick={() => handleApproveDoctor(r.id)} className="text-green-600 hover:underline">Approve & Assign ID</button>
                   )}
                 </td>
               </tr>

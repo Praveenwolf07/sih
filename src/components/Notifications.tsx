@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Bell, X } from "lucide-react";
 
 const NOTIFICATIONS = [
-  { id: 1, type: "Critical", message: "SOS Alert: Sathya Narayanan", time: "27m ago", read: false },
-  { id: 2, type: "Referral", message: "New Referral ACK: Geetha Murugan", time: "1h ago", read: false },
+  { id: 1, type: "Critical", message: "SOS Alert: Saurabh Verma", time: "27m ago", read: false },
+  { id: 2, type: "Referral", message: "New Referral ACK: Geeta Yadav", time: "1h ago", read: false },
   { id: 3, type: "Stock", message: "Low stock alert: Paracetamol", time: "2h ago", read: true },
 ];
 

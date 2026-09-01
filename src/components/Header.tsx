@@ -7,28 +7,28 @@ const NOTIFICATIONS = [
   {
     id: 1,
     type: "sos",
-    text: "SOS Alert: Sathya Narayanan — chest pain, Ward 3",
+    text: "SOS Alert: Sunita Devi — chest pain, Ward 2",
     time: "2 min ago",
     unread: true,
   },
   {
     id: 2,
     type: "stock",
-    text: "Low stock: Paracetamol 500mg (45 strips remaining)",
+    text: "Low stock: Paracetamol 500mg (42 strips remaining)",
     time: "18 min ago",
     unread: true,
   },
   {
     id: 3,
     type: "referral",
-    text: "New referral from ASHA Selvi Arumugam — Ward 3",
+    text: "New referral from ASHA Meena Kumari — Ward 5",
     time: "1 hr ago",
     unread: false,
   },
   {
     id: 4,
     type: "appointment",
-    text: "Dr. Priya Sundaram ANC review due — Token #014",
+    text: "Dr. Ananya Sharma ANC review due — Token #014",
     time: "2 hr ago",
     unread: false,
   },
@@ -217,8 +217,8 @@ export default function Header({ onNavigate }: HeaderProps) {
                 <div className="font-display font-semibold text-phc-text text-sm">
                   Dr. Aravind Kumar
                 </div>
-                <div className="text-[11px] text-phc-muted mt-0.5">aravind.kumar@tnhealth.gov.in</div>
-                <div className="text-[11px] text-phc-blue mt-1 font-medium">Medical Officer · MO-IN-3421</div>
+                <div className="text-[11px] text-phc-muted mt-0.5">aravind.kumar@biharhealth.gov.in</div>
+                <div className="text-[11px] text-phc-blue mt-1 font-medium">Medical Officer · MO-BR-3421</div>
               </div>
               {[
                 { label: "My Profile" },

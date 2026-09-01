@@ -3,7 +3,7 @@ import { useAuth } from "../auth/AuthContext";
 import { ViewType } from "../types";
 
 export default function RegisterAdmin({ onNavigate }: { onNavigate: (view: ViewType) => void }) {
-  const { login } = useAuth();
+  const { registerAdminAccount } = useAuth();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -11,15 +11,13 @@ export default function RegisterAdmin({ onNavigate }: { onNavigate: (view: ViewT
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    registerAdminAccount(name, email, password);
     setIsSuccess(true);
-    setTimeout(async () => {
-      await login(email, password);
-    }, 600);
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-phc-bg p-4" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/736x/18/34/18/1834186c75c9142cb6c571f5fbb141d3.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
-      <div className="w-full max-w-md bg-phc-surface border border-phc-border rounded-lg p-8 shadow-sm">
+    <div className="flex items-center justify-center min-h-screen p-4" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.20), rgba(255,255,255,0.20)), url('https://i.pinimg.com/736x/54/88/7a/54887ab0efe4a8441701110880da005d.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <div className="w-full max-w-md bg-white/90 border border-slate-200 rounded-lg p-8 shadow-sm backdrop-blur-[1px]">
         <button 
           onClick={() => onNavigate("dashboard")} 
           className="mb-4 text-phc-muted hover:text-phc-text underline text-sm block"

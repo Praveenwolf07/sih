@@ -24,8 +24,8 @@
 
   /* Text */
   --color-phc-text: #1A2332;
-  --color-phc-muted: #5C6878;
-  --color-phc-subtle: #8E9BAA;
+  --color-phc-muted: #1F2937;
+  --color-phc-subtle: #334155;
 
   /* Sidebar */
   --color-phc-sidebar: #162A45;
@@ -100,9 +100,7 @@ body {
 
 
 div#root:nth-of-type(1) > div:nth-of-type(1) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/736x/15/f2/5c/15f25c5691e6424cbbade4f0beeb6c25.jpg');
-  background-size: cover;
-  background-position: center;
+  background: #f4f6f9;
 }
 
 div#root:nth-of-type(1) > div:nth-of-type(1) > p:nth-of-type(1),
@@ -111,9 +109,7 @@ div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > p:nth-of-typ
 }
 
 div#root > div > div:nth-of-type(2) > main {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://i.pinimg.com/736x/15/f2/5c/15f25c5691e6424cbbade4f0beeb6c25.jpg');
-  background-size: cover;
-  background-position: center;
+  background: #f4f6f9;
 }
 
 div#root:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) {

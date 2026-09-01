@@ -1,12 +1,12 @@
 import { Search, Filter, Download, CornerUpRight, UserCheck, ChevronDown, ArrowRightLeft } from "lucide-react";
 
 const REFERRALS = [
-  { id: "REF-2024-089", patient: "Sathya Narayanan", age: "42M", diagnosis: "Suspected STEMI — chest pain", referredTo: "CHC Kovilpatti", asha: "Selvi A.", date: "01 Sep 2024", time: "10:05", priority: "emergency", ack: "Acknowledged" },
-  { id: "REF-2024-088", patient: "Geetha Murugan", age: "24F", diagnosis: "Obstructed labour — LSCS indicated", referredTo: "GH Thoothukudi", asha: "Devi S.", date: "31 Aug 2024", time: "02:14", priority: "emergency", ack: "Received" },
-  { id: "REF-2024-087", patient: "Arjun Pandi", age: "34M", diagnosis: "Pulmonary TB (suspected)", referredTo: "DOTS Centre, Kovilpatti", asha: "Meenakshi B.", date: "30 Aug 2024", time: "11:30", priority: "normal", ack: "Acknowledged" },
-  { id: "REF-2024-086", patient: "Nalini Ravi", age: "58F", diagnosis: "Cataract — pre-operative evaluation", referredTo: "Regional Eye Hospital, TTK", asha: "Padma K.", date: "29 Aug 2024", time: "09:45", priority: "normal", ack: "Pending" },
-  { id: "REF-2024-085", patient: "Manickam P.", age: "66M", diagnosis: "Uncontrolled hypertension", referredTo: "CHC Kovilpatti", asha: undefined, date: "28 Aug 2024", time: "14:02", priority: "urgent", ack: "Acknowledged" },
-  { id: "REF-2024-084", patient: "Sumathi Ayyasamy", age: "39F", diagnosis: "Gestational diabetes — specialist consult", referredTo: "GH Thoothukudi", asha: "Kavitha M.", date: "27 Aug 2024", time: "10:20", priority: "normal", ack: "Received" },
+  { id: "REF-2024-089", patient: "Saurabh Verma", age: "42M", diagnosis: "Suspected STEMI — chest pain", referredTo: "AIIMS Patna", asha: "Meena K.", date: "01 Sep 2024", time: "10:05", priority: "emergency", ack: "Acknowledged" },
+  { id: "REF-2024-088", patient: "Geeta Yadav", age: "24F", diagnosis: "Obstructed labour — LSCS indicated", referredTo: "PMCH Patna", asha: "Neelam S.", date: "31 Aug 2024", time: "02:14", priority: "emergency", ack: "Received" },
+  { id: "REF-2024-087", patient: "Arvind Kumar", age: "34M", diagnosis: "Pulmonary TB (suspected)", referredTo: "DOTS Centre, Danapur", asha: "Sunita D.", date: "30 Aug 2024", time: "11:30", priority: "normal", ack: "Acknowledged" },
+  { id: "REF-2024-086", patient: "Nalini Rani", age: "58F", diagnosis: "Cataract — pre-operative evaluation", referredTo: "Regional Eye Hospital, Patna", asha: "Rekha Sharma", date: "29 Aug 2024", time: "09:45", priority: "normal", ack: "Pending" },
+  { id: "REF-2024-085", patient: "Manohar Singh", age: "66M", diagnosis: "Uncontrolled hypertension", referredTo: "CHC Danapur", asha: undefined, date: "28 Aug 2024", time: "14:02", priority: "urgent", ack: "Acknowledged" },
+  { id: "REF-2024-084", patient: "Pooja Kumari", age: "39F", diagnosis: "Gestational diabetes — specialist consult", referredTo: "PMCH Patna", asha: "Anita Yadav", date: "27 Aug 2024", time: "10:20", priority: "normal", ack: "Received" },
 ];
 
 const PRIORITY: Record<string, { bg: string; text: string }> = {

@@ -11,6 +11,7 @@ import {
   BarChart2,
   Settings,
   Palette,
+  MessageSquareText,
   ChevronRight,
   type LucideIcon,
 } from "lucide-react";
@@ -33,6 +34,7 @@ const NAV_ITEMS: NavItem[] = [
   { id: "referrals", label: "Referrals", icon: ArrowRightLeft, badge: 6, badgeColor: "blue", roles: ["DOCTOR"] },
   { id: "appointments", label: "Appointments & Queue", icon: Calendar, roles: ["DOCTOR"] },
   { id: "asha", label: "ASHA Workers", icon: UserCheck, roles: ["ADMIN"] },
+  { id: "ai-chatbot", label: "AI Chatbot", icon: MessageSquareText, roles: ["ADMIN", "DOCTOR"] },
   { id: "admin-doctors", label: "Doctors", icon: Users, roles: ["ADMIN"] },
   { id: "inventory", label: "Inventory", icon: Package, badge: 3, badgeColor: "amber", roles: ["ADMIN"] },
   { id: "followups", label: "Follow-ups", icon: ClipboardList, roles: ["DOCTOR"] },

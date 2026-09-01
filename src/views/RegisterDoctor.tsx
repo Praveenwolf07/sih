@@ -19,8 +19,8 @@ export default function RegisterDoctor({ onNavigate }: { onNavigate: (view: View
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-phc-bg p-4" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/736x/18/34/18/1834186c75c9142cb6c571f5fbb141d3.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
-      <div className="w-full max-w-md bg-phc-surface border border-phc-border rounded-lg p-8 shadow-sm">
+    <div className="flex items-center justify-center min-h-screen p-4" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.20), rgba(255,255,255,0.20)), url('https://i.pinimg.com/736x/54/88/7a/54887ab0efe4a8441701110880da005d.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <div className="w-full max-w-md bg-white/90 border border-slate-200 rounded-lg p-8 shadow-sm backdrop-blur-[1px]">
         <button 
           onClick={() => onNavigate("dashboard")} 
           className="mb-4 text-phc-muted hover:text-phc-text underline text-sm block"
@@ -33,7 +33,7 @@ export default function RegisterDoctor({ onNavigate }: { onNavigate: (view: View
         {isSubmitted ? (
           <div className="p-4 bg-blue-50 text-blue-900 rounded-lg text-center border border-blue-200 space-y-3">
             <p className="font-semibold text-sm">Registration Request Submitted!</p>
-            <p className="text-xs text-blue-700">Your application is pending review by the PHC Administrator. Once approved, you will be assigned a Doctor ID to sign in.</p>
+            <p className="text-xs text-blue-700">Your application is pending review by the PHC Administrator. Once approved, the admin will assign you a system-generated doctor ID and email, then you can sign in.</p>
             <button 
               onClick={() => onNavigate("dashboard")} 
               className="mt-3 px-4 py-1.5 bg-phc-blue text-white text-xs rounded hover:bg-phc-blue-dark"

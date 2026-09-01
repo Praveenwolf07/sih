@@ -14,6 +14,7 @@ import SOS from "./views/SOS";
 import Reports from "./views/Reports";
 import Followups from "./views/Followups";
 import DesignSystem from "./views/DesignSystem";
+import AIChatbot from "./views/AIChatbot";
 import Login from "./views/Login";
 import RegisterAdmin from "./views/RegisterAdmin";
 import RegisterDoctor from "./views/RegisterDoctor";
@@ -64,6 +65,7 @@ export default function App() {
       case "referrals":     return <Referrals />;
       case "appointments":  return <Appointments />;
       case "asha":          return <ASHAWorkers />;
+      case "ai-chatbot":    return <AIChatbot />;
       case "admin-doctors": return <AdminManagement />;
       case "inventory":     return <Inventory />;
       case "sos":           return <SOS />;
