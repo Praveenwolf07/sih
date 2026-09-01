@@ -1,0 +1,10 @@
+{
+  "description": "A comprehensive portal for Primary Health Centres in India to manage patients, appointments, referrals, and healthcare workers efficiently with accessible tools.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

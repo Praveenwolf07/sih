@@ -1,0 +1,16 @@
+export type ViewType =
+  | "dashboard"
+  | "patients"
+  | "triage"
+  | "referrals"
+  | "appointments"
+  | "asha"
+  | "inventory"
+  | "admin-doctors"
+  | "followups"
+  | "sos"
+  | "reports"
+  | "settings"
+  | "design-system"
+  | "register-admin"
+  | "register-doctor";
